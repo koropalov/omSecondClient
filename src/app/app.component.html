@@ -1,3 +1,39 @@
-<h1>Ветка разработки новая</h1>
+
+<nav>
+
+  <div class="nav-wrapper" style="background-color: #3d5afe">
+    <a href="#" class="brand-logo">"Оселя мандрівників"</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/">Будинок</a></li>
+      <li><a routerLinkActive="active" [routerLink]="'/yard'">Подвір'я</a></li>
+      <li><a routerLinkActive="active" [routerLink]="'/price'">Вартість оренди</a></li>
+      <li><a routerLinkActive="active" [routerLink]="'/gallery'">Фото галерея</a></li>
+      <li><a routerLinkActive="active" [routerLink]="'/calendar'">Календар</a></li>
+      <li><a routerLinkActive="active" [routerLink]="'/contacts'">Контакти</a></li>
+      <li><a routerLinkActive="active" [routerLink]="'/admin'"></a></li>
+    </ul>
+  </div>
+</nav>
+
+  <div id="headhead"class="container">
+
 <router-outlet></router-outlet>
-<h2>helllo world</h2>
+
+</div>
+
+
+
+
+
+<footer class="page-footer" style="background-color: #4a148c; margin-top: 250px;">
+  <div class="container">
+    <div class="row">
+      <div class="col l0 s12">
+        <p class="grey-text text-lighten-4">Україна, Львівська область, Сколівський р-н,село Тухля,вул.Захара Беркута 109б;</p>
+        <p class="grey-text text-lighten-4">+38 067 6725905-Оля;</p>
+        <p class="grey-text text-lighten-4">+38 097 5978605-Денис;</p>
+        <p class="grey-text text-lighten-4">email: 249478@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</footer>

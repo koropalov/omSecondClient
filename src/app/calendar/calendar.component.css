@@ -1,0 +1,41 @@
+table{
+  width: 468px;
+
+
+  /* left: 298px; */
+  margin: 81px;
+  /* padding: 128px; */
+  text-align: center;
+
+
+}
+#left{
+  position: relative;
+  left: 33px;
+  top: 130px;
+}
+#right{
+  position: relative;
+  left: 510px;
+  top: 130px;
+
+}
+.coment{
+  width: 45%;
+  background-color:#53dd2e;
+  text-align: center;
+  border-radius:5px;
+  position:relative;
+  left: 656px;
+  top: -477px;
+  color: #334b43;
+}
+#date{
+  position: relative;
+  left: 759px;
+  top: -289px;
+}
+h1{
+  color: #5c5858;
+}
+
