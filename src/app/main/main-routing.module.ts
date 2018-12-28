@@ -3,12 +3,14 @@ import {NgModule} from "@angular/core";
 
 import {MainComponent} from "./main/main.component";
 import {HouseComponent} from "./main/house/house.component";
+import {YardComponent} from "./main/yard/yard.component";
 
 
 
 
 const mainRoutes:Routes=[
-
+  {path:'house',component:HouseComponent},
+  {path:'yard',component:YardComponent}
 ]
 
 

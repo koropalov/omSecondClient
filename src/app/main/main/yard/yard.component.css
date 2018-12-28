@@ -1,33 +1,27 @@
-.container-house{
+.container-yard{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: relative;
   top: -190px;
+  margin-bottom: 170px;
 }
 h1{
   color: #5c5858;
 }
 figure{
   text-align: center;
-
 }
-.img0{
-  width: 92%;
+.img{
+  width:20%;
   border: 2px solid black;
+  float: right;
+  margin-left: 20px;
   border-radius: 5px;
 }
 .img1{
   width:20%;
   border: 2px solid black;
-  border-radius: 5px;
-  position:relative;
-  float:left;
+  float: left;
   margin-right: 20px;
-}
-.img2{
-  width:20%;
-  border: 2px solid black;
   border-radius: 5px;
-  position:relative;
-  float:right;
-  margin-right: 20px;
 }
+
