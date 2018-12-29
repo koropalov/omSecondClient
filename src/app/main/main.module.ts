@@ -5,13 +5,33 @@ import { HederComponent } from './main/heder/heder.component';
 import { FooterComponent } from './main/footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { HouseComponent } from './main/house/house.component';
+import { YardComponent } from './main/yard/yard.component';
+import { PriceComponent } from './main/price/price.component';
+import { GalleryComponent } from './main/gallery/gallery.component';
+import { CalendarComponent } from './main/calendar/calendar.component';
+import { ContactsComponent } from './main/contacts/contacts.component';
+import {CarouselModule} from "ngx-bootstrap/carousel";
+import {BrowserModule} from "@angular/platform-browser";
+import {FormsModule} from "@angular/forms";
+
 
 
 @NgModule({
-  declarations: [HederComponent, FooterComponent, MainComponent, HouseComponent],
+  declarations: [HederComponent,
+                 FooterComponent,
+                 MainComponent,
+                 HouseComponent,
+                 YardComponent,
+                 PriceComponent,
+                 GalleryComponent,
+                 CalendarComponent,
+                 ContactsComponent],
   imports: [
     CommonModule,
-    MainRoutingModule
+    MainRoutingModule,
+    CarouselModule,
+    BrowserModule,
+    FormsModule
   ],
   exports:[
     HederComponent,

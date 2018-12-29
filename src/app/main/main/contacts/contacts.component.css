@@ -1,0 +1,11 @@
+.container-contacts{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  top:-190px;
+}
+h1{
+  color: #5c5858;
+}
+figure{
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+<div class="container-contacts">
+  <h1>Календар</h1>
+  <input id="left" type="button" value="<" class="btn btn-primary" (click)="previous()">
+  <input id="right" type="button" value=">" class="btn btn-primary" (click)="next()">
+  <table id="calendar">
+    {{createCalendar("calendar", y, m)}}
+  </table>
+  <div class="coment">В календарі заброньовані дати виділені таким кольором</div>
+</div>

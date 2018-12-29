@@ -1,0 +1,16 @@
+.container-price{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  top:-190px;
+  margin-bottom: 120px;
+}
+h1{
+  color: #5c5858;
+}
+span{
+  font-size: 30px;
+  color: #452eb8;
+}
+figure{
+  text-align: left;
+}

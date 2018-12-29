@@ -7,9 +7,8 @@ import {HouseComponent} from "./main/main/house/house.component";
 
 
 const routes: Routes = [
-  {path:'',component:MainComponent, children:[
-      {path:'',component:HouseComponent}
-    ]},
+  {path:'',component:MainComponent},
+  {path:'house',redirectTo:'house'},
   {path:'admin',loadChildren:'./admin/admin.module#AdminModule'}
 ];
 
