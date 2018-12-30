@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {MainModule} from "./main/main.module";
+import {CommonModule} from "@angular/common";
+
+
 
 
 
@@ -15,8 +17,7 @@ import {MainModule} from "./main/main.module";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MainModule,
-
+    CommonModule
 
   ],
   providers: [],

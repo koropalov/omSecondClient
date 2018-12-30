@@ -1,14 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {MainComponent} from "./main/main/main.component";
-import {HouseComponent} from "./main/main/house/house.component";
-
 
 
 
 const routes: Routes = [
-  {path:'',component:MainComponent},
-  {path:'house',redirectTo:'house'},
+  {path:'',loadChildren:'./main/main.module#MainModule'},
   {path:'admin',loadChildren:'./admin/admin.module#AdminModule'}
 ];
 

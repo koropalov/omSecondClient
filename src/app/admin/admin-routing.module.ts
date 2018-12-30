@@ -1,4 +1,3 @@
-import {NgModel} from "@angular/forms";
 import {RouterModule, Routes} from "@angular/router";
 import {NgModule} from "@angular/core";
 import {AdminComponent} from "./admin/admin.component";
