@@ -1,0 +1,19 @@
+h1{
+  position:relative;
+  top: -170px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:rgb(103, 110, 44);
+  font-size: 40px;
+  width:100%;
+  height:60px;
+}
+.mainFoto{
+  position: relative;
+  top:-200px;
+  width: 92%;
+  border:2px solid black;
+  border-radius: 5px;
+}
+.mainDiv{
+  text-align: center;
+}

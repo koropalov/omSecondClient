@@ -1,0 +1,9 @@
+#footerMain{
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background-color: #4a148c;
+  position:relative;
+  left:0px;
+  bottom: 0px;
+}

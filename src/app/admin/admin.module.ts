@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {AdminRoutingModule} from "./admin-routing.module";
-import {getServerConfig} from "@angular-devkit/build-angular/src/angular-cli-files/models/webpack-configs";
+import { AdminComponent } from './admin/admin.component';
+import { AdminHederComponent } from './admin/admin-heder/admin-heder.component';
+
 
 @NgModule({
-  declarations: [],
+  declarations: [AdminComponent, AdminHederComponent],
   imports: [
     CommonModule,
     AdminRoutingModule
