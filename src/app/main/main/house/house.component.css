@@ -1,11 +1,12 @@
 .container-house{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: relative;
-  top:-190px;
+  top: -145px;
   min-height: calc(100vh - 100px);
 }
 h1{
   color: #5c5858;
+ font-size: 60px;
 }
 figure{
   text-align: center;

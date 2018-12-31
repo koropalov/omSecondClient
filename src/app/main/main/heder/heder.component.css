@@ -21,7 +21,7 @@
   align-items: center;
   background-color:#bed3e6;
   border-radius: 5px;
-  color: rgb(27, 31, 231);
+  color: #bed3e6;
   margin: 0px;
 }
 li:hover{
@@ -31,5 +31,8 @@ li:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  color:#bed3e6;
 }
-
+a:hover{
+  color:#bed3e6;
+}

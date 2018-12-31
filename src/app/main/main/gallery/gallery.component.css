@@ -1,12 +1,18 @@
 .container-gallery{
   position: relative;
-  top:-190px;
+  top:-145px;
   min-height: calc(100vh - 100px);
 }
 h1{
   color: #5c5858;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 60px;
 }
 img{
-  width: 95%;
+  width: 75%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+figure{
+  text-align: center;
 }

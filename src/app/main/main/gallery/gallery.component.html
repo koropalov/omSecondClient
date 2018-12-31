@@ -1,10 +1,12 @@
 <app-heder></app-heder>
 <div class="container-gallery">
   <h1>Фото галерея</h1>
+  <figure>
   <carousel>
     <slide  *ngFor = "let photo of  gallery">
-      <img [src]= photo.imageSrc >
+      <img [src]= photo.imageSrc  >
     </slide>
   </carousel>
+  </figure>
 </div>
 <app-footer></app-footer>

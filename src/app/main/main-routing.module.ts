@@ -1,7 +1,6 @@
 import {RouterModule, Routes} from "@angular/router";
 import {NgModule} from "@angular/core";
 
-import {MainComponent} from "./main/main.component";
 import {HouseComponent} from "./main/house/house.component";
 import {YardComponent} from "./main/yard/yard.component";
 import {PriceComponent} from "./main/price/price.component";
@@ -12,26 +11,25 @@ import {CommonModule} from "@angular/common";
 
 
 
-
 const mainRoutes:Routes=[
-  {path:'',component:MainComponent,children:[
   {path:'house',component:HouseComponent},
   {path:'yard',component:YardComponent},
   {path:'price',component:PriceComponent},
   {path:'gallery',component:GalleryComponent},
   {path:'calendar',component:CalendarComponent},
   {path:'contacts',component:ContactsComponent}
-  ]}
+
 ]
 
 
 @NgModule({
   imports:[
     RouterModule.forChild(mainRoutes),
-    CommonModule
+    CommonModule,
+
   ],
   exports:[
-    RouterModule
+    RouterModule,
   ]
 })
 export class MainRoutingModule{

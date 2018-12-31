@@ -8,14 +8,21 @@ export class Foto{
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
-   gallery:Foto[]=[
-     {imageSrc:'../../../../assets/childplas.jpg'},
-     {imageSrc:'../../../../assets/mangal.jpg'}
+  gallery: Foto[] = [
+    {imageSrc: '../../../../assets/childplas.jpg'},
+    {imageSrc: '../../../../assets/mangal.jpg'},
+    {imageSrc: '../../../../assets/riv.JPG'},
+    {imageSrc: '../../../../assets/swemingpull.jpg'},
+    {imageSrc: '../../../../assets/Yard3.JPG'},
+    {imageSrc: '../../../../assets/Yard5.JPG'}
   ];
+
 
   constructor() {
   }
 
-  ngOnInit() {}
+  ngOnInit() {
 
+
+  }
 }

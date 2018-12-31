@@ -1,7 +1,7 @@
-.container-contacts{
+.container-calendar{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: relative;
-  top:-190px;
+  top:-145px;
   min-height: calc(100vh - 100px);
 }
 table{
@@ -26,9 +26,10 @@ table{
   width: 300px;
   position:relative;
   left: 647px;
-  top: -475px;
+  top: -284px;
   color: #334b43;
 }
 h1{
   color: #5c5858;
+  font-size: 60px;
 }

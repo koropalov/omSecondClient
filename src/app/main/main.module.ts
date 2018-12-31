@@ -18,6 +18,7 @@ import {CarouselModule} from "ngx-bootstrap/carousel";
 
 
 
+
 @NgModule({
   declarations: [HederComponent,
                  FooterComponent,
@@ -37,7 +38,7 @@ import {CarouselModule} from "ngx-bootstrap/carousel";
   ],
   exports:[
     HederComponent,
-    FooterComponent,
+    FooterComponent
   ]
 })
 export class MainModule { }
