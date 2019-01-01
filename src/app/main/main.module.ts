@@ -14,6 +14,7 @@ import { GalleryComponent } from './main/gallery/gallery.component';
 import { CalendarComponent } from './main/calendar/calendar.component';
 import { ContactsComponent } from './main/contacts/contacts.component';
 import {CarouselModule} from "ngx-bootstrap/carousel";
+import {SharedModule} from "../SharedModule/shared.module";
 
 
 
@@ -21,24 +22,27 @@ import {CarouselModule} from "ngx-bootstrap/carousel";
 
 @NgModule({
   declarations: [HederComponent,
-                 FooterComponent,
+                 //FooterComponent,
                  MainComponent,
                  HouseComponent,
                  YardComponent,
                  PriceComponent,
                  GalleryComponent,
                  CalendarComponent,
-                 ContactsComponent],
+                 ContactsComponent
+                 ],
   imports: [
     CommonModule,
     MainRoutingModule,
     CarouselModule,
     BrowserModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   exports:[
     HederComponent,
-    FooterComponent
+    //FooterComponent,
+    SharedModule
   ]
 })
 export class MainModule { }
