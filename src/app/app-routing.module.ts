@@ -7,7 +7,6 @@ import {MainComponent} from "./main/main/main.component";
 
 const routes: Routes = [
   {path:'',component:MainComponent},
-  {path:'house',redirectTo:'house'},
   {path:'admin',loadChildren:'./admin/admin.module#AdminModule'}
 ];
 

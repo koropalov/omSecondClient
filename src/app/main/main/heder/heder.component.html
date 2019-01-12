@@ -3,12 +3,19 @@
     <ul class="head">
       <li><a routerLinkActive="active"
              [routerLinkActiveOptions]="{exact:true}"
-             [routerLink]="'/house'"> Будинок</a></li>
-      <li><a routerLinkActive="active" [routerLink]="'/yard'">Подвір'я</a></li>
-      <li><a routerLinkActive="active" [routerLink]="'/price'">Вартість оренди</a></li>
-      <li><a routerLinkActive="active" [routerLink]="'/gallery'">Фото галерея</a></li>
-      <li><a routerLinkActive="active" [routerLink]="'/calendar'">Календар</a></li>
-      <li><a routerLinkActive="active" [routerLink]="'/contacts'">Контакти</a></li>
+             [routerLink]="'/house'">{{'house'| translate}}</a></li>
+      <li><a routerLinkActive="active" [routerLink]="'/yard'">{{'yard'| translate}}</a></li>
+      <li><a routerLinkActive="active" [routerLink]="'/price'">{{'price'| translate}}</a></li>
+      <li><a routerLinkActive="active" [routerLink]="'/gallery'">{{'foto gallery'| translate}}</a></li>
+      <li><a routerLinkActive="active" [routerLink]="'/calendar'">{{'calendar'| translate}}</a></li>
+      <li><a routerLinkActive="active" [routerLink]="'/contacts'">{{'contacts'| translate}}</a></li>
+      <ul class="leng">
+      <li><a (click)="useLanguage('ru')"><img src="../../../assets/russia_round_button_with_iso_code_64.png" height="48"
+                                                     width="64"/></a></li>
+      <li><a (click)="useLanguage('ua')"><img src="../../../assets/ukraine_round_button_with_iso_code_64.png" height="48"
+                                                     width="64"/></a></li>
+      <li><a (click)="useLanguage('en')"><img src="../../../../assets/united_kingdom_round_button_with_iso_code_64.png"
+                                              height="48" width="64"/></a></li></ul>
     </ul>
   </div>
 </div>

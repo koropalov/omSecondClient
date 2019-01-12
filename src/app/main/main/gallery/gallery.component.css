@@ -1,7 +1,6 @@
 .container-gallery{
   position: relative;
-  top:-145px;
-  min-height: calc(100vh - 100px);
+  top:-550px;
 }
 h1{
   color: #5c5858;

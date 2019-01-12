@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TranslateService} from "@ngx-translate/core";
 
 interface BookedDates{
 
@@ -14,11 +15,117 @@ interface BookedDates{
   styleUrls: ['./calendar.component.css']
 })
 export class CalendarComponent implements OnInit {
-  bookedDates:BookedDates[] = [];
+  lang:string;
+  bookedDates:BookedDates[] = [
+    { "_id": "03022019",
+      "day": 3,
+      "month": 1,
+      "year": 2019},
+    {  "_id": "02022019",
+      "day": 2,
+      "month": 1,
+      "year": 2019},
+    {"_id": "01022019",
+      "day": 1,
+      "month": 1,
+      "year": 2019},
+    {
+      "_id": "03032019",
+      "day": 3,
+      "month": 2,
+      "year": 2019
+    },
+    {"_id": "02032019",
+      "day": 2,
+      "month": 2,
+      "year": 2019},
+    { "_id": "01032019",
+      "day": 1,
+      "month": 2,
+      "year": 2019},
+    {"_id": "28022019",
+      "day": 28,
+      "month": 1,
+      "year": 2019},
+    {"_id": "27022019",
+      "day": 27,
+      "month": 1,
+      "year": 2019},
+    {"_id": "26022019",
+      "day": 26,
+      "month": 1,
+      "year": 2019},
+    {  "_id": "25022019",
+      "day": 25,
+      "month": 1,
+      "year": 2019},
+    {"_id": "24022019",
+      "day": 24,
+      "month": 1,
+      "year": 2019},
+    {  "_id": "23022019",
+      "day": 23,
+      "month": 1,
+      "year": 2019},
+    { "_id": "30122018",
+      "day": 30,
+      "month": 11,
+      "year": 2018},
+    { "_id": "20012019",
+      "day": 20,
+      "month": 0,
+      "year": 2019},
+    { "_id": "19012019",
+      "day": 19,
+      "month": 0,
+      "year": 2019},
+    {  "_id": "18012019",
+      "day": 18,
+      "month": 0,
+      "year": 2019},
+    {"_id": "13012019",
+      "day": 13,
+      "month": 0,
+      "year": 2019},
+    {"_id": "12012019",
+      "day": 12,
+      "month": 0,
+      "year": 2019},
+    {"_id": "11012019",
+      "day": 11,
+      "month": 0,
+      "year": 2019},
+    {"_id": "06012019",
+      "day": 6,
+      "month": 0,
+      "year": 2019},
+    {
+      "_id": "05012019",
+      "day": 5,
+      "month": 0,
+      "year": 2019},
+    {"_id": "04012019",
+      "day": 4,
+      "month": 0,
+      "year": 2019},
+    {"_id": "26012019",
+      "day": 26,
+      "month": 0,
+      "year": 2019},
+    {  "_id": "27012019",
+      "day": 27,
+      "month": 0,
+      "year": 2019},
+    { "_id": "28012019",
+      "day": 28,
+      "month": 0,
+      "year": 2019}
+  ];
   nDate: string;
   dDate: string;
 
-  constructor() { }
+  constructor(private translate: TranslateService) {
+  }
 
   ngOnInit() {
   }
@@ -40,6 +147,7 @@ export class CalendarComponent implements OnInit {
   }
 
   createCalendar(id, year, month) {
+
     var elem = document.getElementById(id);
 
     var mon = month; // месяцы в JS идут от 0 до 11, а не от 1 до 12
@@ -49,13 +157,13 @@ export class CalendarComponent implements OnInit {
     var m2 = ["January","February","March","April","May","June","July","August","September","October","November","December"];
     var  m=d.getMonth();
     var table;
-    //if(this.j==0){table='<tbody><thead><tr><td colspan="4" style="color:rgb(85, 85, 85)">'+m0[m]+'<td colspan="3" style="color:rgb(85, 85, 85)">'+year+'<tr style="color:rgb(85, 85, 85)"><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr>'}else{
-      //if(this.j==1){
+    //if(this.translate.use('ru')){table='<tbody><thead><tr><td colspan="4" style="color:rgb(85, 85, 85)">'+m0[m]+'<td colspan="3" style="color:rgb(85, 85, 85)">'+year+'<tr style="color:rgb(85, 85, 85)"><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr>'}else{
+      //if(this.lang=='ua'){
         table='<tbody><thead><tr><td colspan="4" style="color:rgb(85, 85, 85)">'+m1[m]+'<td colspan="3" style="color:rgb(85, 85, 85)">'+year+'<tr style="color:rgb(85, 85, 85)"><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>нд</th></tr><tr>'
-          //+}else{
-       // if(this.j==2){table='<tbody><thead><tr><td colspan="4" style="color:rgb(85, 85, 85)">'+m2[m]+'<td colspan="3" style="color:rgb(85, 85, 85)">'+year+'<tr style="color:rgb(85, 85, 85)"><th>mo</th><th>tu</th><th>we</th><th>th</th><th>fr</th><th>sa</th><th>su</th></tr><tr>'}
-     // }
-    //};
+  //}else{
+        //if(this.lang=='en'){table='<tbody><thead><tr><td colspan="4" style="color:rgb(85, 85, 85)">'+m2[m]+'<td colspan="3" style="color:rgb(85, 85, 85)">'+year+'<tr style="color:rgb(85, 85, 85)"><th>mo</th><th>tu</th><th>we</th><th>th</th><th>fr</th><th>sa</th><th>su</th></tr><tr>'}
+      //}
+   // };
 
     // заполнить первый ряд от понедельника
     // и до дня, с которого начинается месяц
