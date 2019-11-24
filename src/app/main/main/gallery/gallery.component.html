@@ -1,0 +1,10 @@
+<div class="container-gallery">
+  <h1>{{'foto gallery'| translate}}</h1>
+  <figure>
+    <carousel>
+      <slide  *ngFor = "let photo of  gallery">
+        <img [src]= photo.imageSrc  >
+      </slide>
+    </carousel>
+  </figure>
+</div>

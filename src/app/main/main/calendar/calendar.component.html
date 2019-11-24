@@ -1,0 +1,9 @@
+<div class="container-calendar">
+  <h1>{{'calendar'| translate}}</h1>
+  <input id="left" type="button" value="<" class="btn btn-primary" (click)="previous()">
+  <input id="right" type="button" value=">" class="btn btn-primary" (click)="next()">
+  <table id="calendar">
+    {{createCalendar("calendar", y, m)}}
+  </table>
+  <div class="coment">{{'In the calendar, booked dates are highlighted'|translate}}</div>
+</div>

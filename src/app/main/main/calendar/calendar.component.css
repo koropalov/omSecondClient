@@ -1,0 +1,35 @@
+.container-calendar{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  top:-550px;
+  margin-left: 15px;
+}
+table{
+  width: 468px;
+  margin: 81px;
+  text-align: center;
+}
+#left{
+  top: 130px;
+  position: relative;
+  left: 34px;
+}
+#right{
+  position: relative;
+  top: 130px;
+  left: 516px;
+}
+.coment{
+  background-color:#53dd2e;
+  text-align: center;
+  border-radius:5px;
+  width: 300px;
+  position:relative;
+  left: 647px;
+  top: -284px;
+  color: #334b43;
+}
+h1{
+  color: #5c5858;
+  font-size: 60px;
+}
